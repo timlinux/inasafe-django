@@ -34,8 +34,8 @@ RUN pip install uwsgi
 
 ADD uwsgi.conf /uwsgi.conf
 
-# Open port 49360 as we will be running our uwsgi socket on that
-EXPOSE 49360
+# Open port 8080 as we will be running our uwsgi socket on that
+EXPOSE 8080
 
 WORKDIR /home/web/django_project
 # You could put --protocol=http as a parameter (to test it directly)
